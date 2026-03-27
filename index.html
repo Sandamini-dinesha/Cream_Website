@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDcream - Premium Skincare & Cosmetics</title>
+    <meta name="description" content="Discover the glow within with SDcream. Premium, luxurious cosmetic skincare tailored for your beautiful skin.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-[#FDFBF7] text-[#4A3B32] antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-[#FDFBF7]/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="font-serif text-3xl font-bold tracking-widest text-[#D4AF37]">SDcream</a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-10">
+                    <a href="index.html" class="nav-link text-[#4A3B32] font-medium active">Home</a>
+                    <a href="about.html" class="nav-link text-[#4A3B32] font-medium transition-colors hover:text-[#D4AF37]">About Us</a>
+                    <a href="shop.html" class="nav-link text-[#4A3B32] font-medium transition-colors hover:text-[#D4AF37]">Shop Collection</a>
+                    <a href="contact.html" class="nav-link text-[#4A3B32] font-medium transition-colors hover:text-[#D4AF37]">Contact</a>
+                </div>
+                <!-- Desktop Icons -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#" class="text-[#4A3B32] hover:text-[#D4AF37] transition-colors"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+                    <a href="checkout.html" class="text-[#4A3B32] hover:text-[#D4AF37] transition-colors relative">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="absolute -top-2 -right-2 bg-[#D4AF37] text-white text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">2</span>
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-[#4A3B32] hover:text-[#D4AF37] focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#FDFBF7] shadow-lg absolute w-full left-0 top-20">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="index.html" class="block px-3 py-2 text-[#D4AF37] font-medium">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-[#4A3B32] hover:text-[#D4AF37] font-medium">About</a>
+                <a href="shop.html" class="block px-3 py-2 text-[#4A3B32] hover:text-[#D4AF37] font-medium">Shop</a>
+                <a href="contact.html" class="block px-3 py-2 text-[#4A3B32] hover:text-[#D4AF37] font-medium">Contact</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center lg:text-left">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <p class="text-[#D4AF37] font-medium tracking-widest uppercase mb-4 text-sm">Luxury Skincare Redefined</p>
+                    <h1 class="font-serif text-5xl lg:text-7xl font-semibold leading-tight mb-6 text-[#4A3B32]">
+                        Unlock Your Natural <br><span class="italic text-[#D4AF37]">Radiance</span>
+                    </h1>
+                    <p class="text-gray-600 text-lg mb-10 max-w-lg mx-auto lg:mx-0 font-light">
+                        Experience the supreme touch of SDcream. Crafted with pure ingredients to rejuvenate, hydrate, and bring out your most flawless glow.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="shop.html" class="btn-hover inline-block bg-[#4A3B32] text-white px-10 py-4 uppercase tracking-wider text-sm font-medium hover:bg-[#322720]">
+                            Shop Now
+                        </a>
+                        <a href="about.html" class="btn-hover inline-block border border-[#4A3B32] text-[#4A3B32] px-10 py-4 uppercase tracking-wider text-sm font-medium hover:bg-[#F3E5AB]/20">
+                            Discover More
+                        </a>
+                    </div>
+                </div>
+                <!-- Hero Image -->
+                <div class="fade-in relative hidden lg:block">
+                    <div class="absolute inset-0 bg-[#d4af37] rounded-full blur-[100px] opacity-20 transform translate-x-10 translate-y-10"></div>
+                    <img src="assets/images/hero_cream_jar.png" alt="SDcream Jar" class="w-full h-auto object-cover rounded-2xl shadow-2xl relative z-10">
+                </div>
+                <!-- Mobile Hero Image -->
+                <div class="fade-in block lg:hidden mt-10">
+                    <img src="assets/images/hero_cream_jar.png" alt="SDcream Jar" class="w-full h-auto object-cover rounded-2xl shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlight Section -->
+    <section class="py-20 bg-[#F3E5AB]/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-serif text-3xl md:text-5xl text-[#4A3B32] mb-12 fade-in">Why SDcream?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="fade-in bg-white p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 mx-auto bg-[#FDFBF7] rounded-full flex items-center justify-center text-[#D4AF37] text-2xl mb-6 shadow-sm">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3">Deep Hydration</h3>
+                    <p class="text-gray-600 font-light text-sm">Penetrates deep layers to lock in moisture for 24 hours, giving a supple youthful look.</p>
+                </div>
+                <div class="fade-in bg-white p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 mx-auto bg-[#FDFBF7] rounded-full flex items-center justify-center text-[#D4AF37] text-2xl mb-6 shadow-sm">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3">100% Organic</h3>
+                    <p class="text-gray-600 font-light text-sm">Formulated with nature's finest extracts. Zero parabens, zero compromises.</p>
+                </div>
+                <div class="fade-in bg-white p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 mx-auto bg-[#FDFBF7] rounded-full flex items-center justify-center text-[#D4AF37] text-2xl mb-6 shadow-sm">
+                        <i class="fa-solid fa-sparkles"></i>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3">Anti-Aging</h3>
+                    <p class="text-gray-600 font-light text-sm">Rich in antioxidants that reduce fine lines and restore your skin's natural vitality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-in order-2 lg:order-1">
+                    <img src="assets/images/cream_texture.png" alt="SDcream Texture" class="w-full rounded-2xl shadow-lg">
+                </div>
+                <div class="fade-in order-1 lg:order-2">
+                    <h4 class="text-[#D4AF37] uppercase tracking-wider text-sm mb-3">The Signature Product</h4>
+                    <h2 class="font-serif text-4xl lg:text-5xl mb-6 text-[#4A3B32]">SDcream Original</h2>
+                    <p class="text-gray-600 font-light mb-8 leading-relaxed">
+                        Our flagship product is meticulously formulated to transform dull skin into a canvas of luminosity. Feel the unmatched smooth texture as it instantly absorbs, leaving behind nothing but a silky glow.
+                    </p>
+                    <div class="flex items-center space-x-6 mb-8">
+                        <span class="text-3xl font-serif text-[#D4AF37]">$85.00</span>
+                        <div class="flex text-yellow-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-gray-500 ml-2">(4.9/5 Reviews)</span>
+                        </div>
+                    </div>
+                    <a href="checkout.html" class="btn-hover inline-block bg-[#4A3B32] text-white px-8 py-4 uppercase tracking-wider text-sm font-medium w-full sm:w-auto text-center">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Immersive Beauty Section -->
+    <section class="relative h-screen bg-cover bg-center bg-fixed" style="background-image: url('assets/images/model_glowing_skin.png');">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-center px-4">
+            <div class="fade-in max-w-3xl">
+                <h2 class="font-serif text-4xl lg:text-6xl text-white mb-6">Embrace Your True Beauty</h2>
+                <p class="text-white/90 text-lg lg:text-xl font-light mb-10">We believe in empowering your skin journey with elegance and purity.</p>
+                <a href="about.html" class="btn-hover inline-block bg-white text-[#4A3B32] px-10 py-4 uppercase tracking-wider text-sm font-bold">
+                    Our Story
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2A211D] text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-1 border-b border-white/20 pb-10 md:border-0 md:pb-0">
+                    <a href="index.html" class="font-serif text-3xl font-bold tracking-widest text-[#D4AF37] mb-6 inline-block">SDcream</a>
+                    <p class="text-white/70 font-light text-sm leading-relaxed mb-6">Redefining luxury skincare with nature's most potent ingredients. Reveal your glow today.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white/70 hover:text-[#D4AF37] transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-white/70 hover:text-[#D4AF37] transition-colors"><i class="fa-brands fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="text-white/70 hover:text-[#D4AF37] transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+                <!-- Links -->
+                <div>
+                    <h4 class="font-serif text-lg mb-6 text-[#D4AF37]">Shop</h4>
+                    <ul class="space-y-3 font-light text-white/70 text-sm">
+                        <li><a href="shop.html" class="hover:text-white transition-colors">All Products</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Best Sellers</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Gift Sets</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Special Offers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-serif text-lg mb-6 text-[#D4AF37]">Company</h4>
+                    <ul class="space-y-3 font-light text-white/70 text-sm">
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Sustainability</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="font-serif text-lg mb-6 text-[#D4AF37]">Newsletter</h4>
+                    <p class="text-white/70 font-light text-sm mb-4">Subscribe for exclusive offers and skincare tips.</p>
+                    <form class="flex text-sm">
+                        <input type="email" placeholder="Your email address" class="bg-white/10 text-white px-4 py-3 placeholder-white/50 focus:outline-none flex-grow border border-white/20 focus:border-[#D4AF37]">
+                        <button type="submit" class="bg-[#D4AF37] text-white px-6 py-3 font-medium hover:bg-[#b08e23] transition-colors">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-white/50 text-xs font-light">
+                <p>&copy; 2026 SDcream. All rights reserved.</p>
+                <div class="space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
